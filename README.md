@@ -1,10 +1,10 @@
-govivant.js
+mysdk.js
 ============
 
-Govivant Javascript SDK for Angular.js
+mysdk Javascript SDK for Angular.js
 
 ### Installation
-`bower install govivant-js`
+`bower install mysdk-js`
 
 #### Dependencies
 The SDK relies on Angular.js and ngResource
@@ -16,14 +16,14 @@ The SDK relies on Angular.js and ngResource
 #### Download
 Production (minified):
 ```
-<script src="//assets.govivant.com/js/govivant/VERSION/govivant.min.js"></script>
-<script>govivant('production')</script>
+<script src="//assets.mysdk.com/js/mysdk/VERSION/mysdk.min.js"></script>
+<script>mysdk('production')</script>
 ```
 
 Development:
 ```
-<script src="//assets.govivant.com/js/govivant/VERSION/govivant.js"></script>
-<script>govivant('development')</script>
+<script src="//assets.mysdk.com/js/mysdk/VERSION/mysdk.js"></script>
+<script>mysdk('development')</script>
 ```
 
 Development
@@ -52,7 +52,7 @@ Simply call:
 ```
 make
 ```
-This will build `govivant.js` and `govivant-dev.js` in the `./build` directory.
+This will build `mysdk.js` and `mysdk-dev.js` in the `./build` directory.
 
 or
 
@@ -60,7 +60,7 @@ or
 gulp release
 ```
 
-for building govivant.js, and govivant.min.js in the `./release` directory.
+for building mysdk.js, and mysdk.min.js in the `./release` directory.
 
 #### Testing
 

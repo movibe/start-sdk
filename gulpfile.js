@@ -35,8 +35,8 @@ var UGLIFYOPTIONS    = {
         drop_console: true
     }
 };
-var UNMINIFIEDSCRIPT = 'govivant.js';
-var MINIFIEDSCRIPT   = 'govivant.min.js';
+var UNMINIFIEDSCRIPT = 'mysdk.js';
+var MINIFIEDSCRIPT   = 'mysdk.min.js';
 
 /* =========================================================================
  * Tasks

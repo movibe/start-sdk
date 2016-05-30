@@ -1,7 +1,7 @@
 (function () {
     'use strict';
     angular
-        .module('govivant.sdk', [
+        .module('mysdk.sdk', [
             'lbServices',
             'angularFileUpload',
             'stripe.checkout',
@@ -12,7 +12,7 @@
             'ngFileUpload',
             'ngResource'
         ])
-        .provider('govivantSdk', function () {
+        .provider('mysdkSdk', function () {
 
             var GO_ENV    = window.GO_ENV || 'production';
             var GO_CLIENT = window.GO_CLIENT || 'web';
@@ -25,11 +25,11 @@
 
             // API
             var API = {
-                production: 'https://api.govivant.com',
-                development: 'https://api-dev.govivant.com',
+                production: 'https://api.mysdk.com',
+                development: 'https://api-dev.mysdk.com',
                 localHttp: 'http://localhost:5000',
                 localHttps: 'https://localhost:5001',
-                test: 'https://api-dev.govivant.com',
+                test: 'https://api-dev.mysdk.com',
             };
 
             var config = {
@@ -95,8 +95,8 @@
 
         })
 
-        .service('GovivantConfig', function (govivantSdk) {
-            return govivantSdk
+        .service('mysdkConfig', function (mysdkSdk) {
+            return mysdkSdk
         });
 
 })();
