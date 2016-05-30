@@ -1,0 +1,28 @@
+box: node:4.2.4
+
+build:
+  steps:
+    - script:
+        name: build info
+        code: |
+          echo "node version $(node -v) running"
+          echo "npm version $(npm -v) running"
+
+    - npm-install
+
+    - script:
+        name: bower
+        code: |
+          npm install -g bower
+          bower install --allow-root
+
+    - script:
+        name: gulp
+        code: |
+          npm install -g gulp-cli
+          gulp test --allow-root
+
+  after-steps:
+    - slack-notifier:
+        url: $SLACK_URL
+        channel: $SLACK_CHANNEL

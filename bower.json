@@ -1,0 +1,35 @@
+{
+  "name": "mysdk",
+  "version": "0.0.1",
+  "authors": [
+    "Willian Ribeiro <agfoccus@gmail.com>"
+  ],
+  "description": "MY JS SDK",
+  "main": "release/sdk.js",
+  "keywords": [
+    "sdk"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests",
+    ".bowerrc",
+    ".gitignore",
+    "gulpfile.js",
+    "Makefile",
+    "package.json",
+    "README.md",
+    "wercker.yml",
+    "src",
+    "bower.json",
+    ".jshintrc"
+  ],
+  "dependencies": {
+    "angular": "~1.5.0",
+  },
+  "devDependencies": {
+    "angular-mocks": "~1.5.0"
+  }
+}
